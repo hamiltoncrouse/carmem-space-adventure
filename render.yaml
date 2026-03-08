@@ -1,13 +1,13 @@
-# Blueprint for Carmem Space Adventure Landing Page
-# This file defines the A2UI (Canvas) layout for the retro doll landing page.
+# Blueprint for Carmem Space Adventure Landing Page (Fixed)
+# Strictly compliant A2UI YAML definition.
 
 kind: box
 padding: 20
-backgroundColor: "#f4ece1" # Creamy vintage background
+backgroundColor: "#f4ece1"
 children:
-  # Header Section
+  # Header
   - kind: box
-    backgroundColor: "#e67e22" # Retro orange
+    backgroundColor: "#e67e22"
     padding: 40
     children:
       - kind: text
@@ -15,46 +15,37 @@ children:
         fontSize: 32
         color: "white"
         fontWeight: "bold"
-        textAlign: "center"
+        align: "center"
       - kind: text
         text: "A boneca que leva você para as estrelas!"
         fontSize: 18
         color: "white"
         fontStyle: "italic"
-        textAlign: "center"
+        align: "center"
         marginTop: 10
 
-  # Product Showcase Section
+  # Product Showcase
   - kind: box
     flexDirection: "row"
     padding: 40
-    gap: 40
     children:
-      # Product Image with retro polaroid-style frame
       - kind: image
         src: "https://images.clawhub.com/api/v1/blobs/7643c142-050b-4c25-a362-40fed1357654"
         flex: 1
         borderRadius: 10
-        borderWidth: 10
-        borderColor: "white"
-        rotate: -2
       
-      # Product Information
       - kind: box
         flex: 1
+        marginLeft: 40
         children:
           - kind: text
             text: "Conheça a Carmem"
             fontSize: 24
             color: "#d35400"
             fontWeight: "bold"
-            borderBottomWidth: 2
-            borderBottomColor: "#d35400"
-            paddingBottom: 10
           - kind: text
             text: "Diretamente da era de ouro da exploração espacial, a Carmem é mais do que uma boneca — ela é uma pioneira! Prepare-se para missões intergalácticas no conforto da sua sala."
             marginTop: 20
-            lineHeight: 24
           - kind: text
             text: "Características:"
             fontSize: 20
@@ -70,7 +61,7 @@ children:
           - kind: text
             text: "🚀 Inclui rádio comunicador de longo alcance."
 
-  # Story/Marketing Section
+  # Story
   - kind: box
     padding: 40
     children:
@@ -82,9 +73,8 @@ children:
       - kind: text
         text: "Seja explorando a Lua ou orbitando Marte, Carmem está pronta para qualquer desafio. Com seu traje de alta tecnologia e espírito aventureiro, o céu não é o limite!"
         marginTop: 10
-        lineHeight: 24
 
-  # Footer Section
+  # Footer
   - kind: box
     backgroundColor: "#2c3e50"
     padding: 20
@@ -92,4 +82,4 @@ children:
       - kind: text
         text: "© 1976 Estrela de Ouro Brinquedos. Todos os direitos reservados."
         color: "#ecf0f1"
-        textAlign: "center"
+        align: "center"
