@@ -1,86 +1,82 @@
-# Blueprint for Carmem Space Adventure Landing Page (Fixed)
-# Strictly compliant A2UI YAML definition.
+kind: box
+padding: 20
+backgroundColor: "#f4ece1"
+children:
+  # Header
+  - kind: box
+    backgroundColor: "#e67e22"
+    padding: 40
+    children:
+      - kind: text
+        text: "Aventura no Espaço com Carmem!"
+        fontSize: 32
+        color: "white"
+        fontWeight: "bold"
+        align: "center"
+      - kind: text
+        text: "A boneca que leva você para as estrelas!"
+        fontSize: 18
+        color: "white"
+        fontStyle: "italic"
+        align: "center"
+        marginTop: 10
 
-spec:
-  kind: box
-  padding: 20
-  backgroundColor: "#f4ece1"
-  children:
-    # Header
-    - kind: box
-      backgroundColor: "#e67e22"
-      padding: 40
-      children:
-        - kind: text
-          text: "Aventura no Espaço com Carmem!"
-          fontSize: 32
-          color: "white"
-          fontWeight: "bold"
-          align: "center"
-        - kind: text
-          text: "A boneca que leva você para as estrelas!"
-          fontSize: 18
-          color: "white"
-          fontStyle: "italic"
-          align: "center"
-          marginTop: 10
+  # Product Showcase
+  - kind: box
+    flexDirection: "row"
+    padding: 40
+    children:
+      - kind: image
+        src: "https://images.clawhub.com/api/v1/blobs/7643c142-050b-4c25-a362-40fed1357654"
+        flex: 1
+        borderRadius: 10
+      
+      - kind: box
+        flex: 1
+        marginLeft: 40
+        children:
+          - kind: text
+            text: "Conheça a Carmem"
+            fontSize: 24
+            color: "#d35400"
+            fontWeight: "bold"
+          - kind: text
+            text: "Diretamente da era de ouro da exploração espacial, a Carmem é mais do que uma boneca — ela é uma pioneira! Prepare-se para missões intergalácticas no conforto da sua sala."
+            marginTop: 20
+          - kind: text
+            text: "Características:"
+            fontSize: 20
+            fontWeight: "bold"
+            marginTop: 20
+          - kind: text
+            text: "🚀 Traje espacial detalhado com insígnias reais."
+            marginTop: 10
+          - kind: text
+            text: "🚀 Capacete removível para visibilidade máxima."
+          - kind: text
+            text: "🚀 Membros articulados para poses heróicas."
+          - kind: text
+            text: "🚀 Inclui rádio comunicador de longo alcance."
 
-    # Product Showcase
-    - kind: box
-      flexDirection: "row"
-      padding: 40
-      children:
-        - kind: image
-          src: "https://images.clawhub.com/api/v1/blobs/7643c142-050b-4c25-a362-40fed1357654"
-          flex: 1
-          borderRadius: 10
-        
-        - kind: box
-          flex: 1
-          marginLeft: 40
-          children:
-            - kind: text
-              text: "Conheça a Carmem"
-              fontSize: 24
-              color: "#d35400"
-              fontWeight: "bold"
-            - kind: text
-              text: "Diretamente da era de ouro da exploração espacial, a Carmem é mais do que uma boneca — ela é uma pioneira! Prepare-se para missões intergalácticas no conforto da sua sala."
-              marginTop: 20
-            - kind: text
-              text: "Características:"
-              fontSize: 20
-              fontWeight: "bold"
-              marginTop: 20
-            - kind: text
-              text: "🚀 Traje espacial detalhado com insígnias reais."
-              marginTop: 10
-            - kind: text
-              text: "🚀 Capacete removível para visibilidade máxima."
-            - kind: text
-              text: "🚀 Membros articulados para poses heróicas."
-            - kind: text
-              text: "🚀 Inclui rádio comunicador de longo alcance."
+  # Story
+  - kind: box
+    padding: 40
+    children:
+      - kind: text
+        text: "Missão: Imaginação"
+        fontSize: 24
+        color: "#d35400"
+        fontWeight: "bold"
+      - kind: text
+        text: "Seja explorando a Lua ou orbitando Marte, Carmem está pronta para qualquer desafio. Com seu traje de alta tecnologia e espírito aventureiro, o céu não é o limite!"
+        marginTop: 10
 
-    # Story
-    - kind: box
-      padding: 40
-      children:
-        - kind: text
-          text: "Missão: Imaginação"
-          fontSize: 24
-          color: "#d35400"
-          fontWeight: "bold"
-        - kind: text
-          text: "Seja explorando a Lua ou orbitando Marte, Carmem está pronta para qualquer desafio. Com seu traje de alta tecnologia e espírito aventureiro, o céu não é o limite!"
-          marginTop: 10
-
-    # Footer
-    - kind: box
-      backgroundColor: "#2c3e50"
-      padding: 20
-      children:
-        - kind: text
-          text: "© 1976 Estrela de Ouro Brinquedos. Todos os direitos reservados."
-          color: "#ecf0f1"
-          align: "center"
+  # Footer
+  - kind: box
+    backgroundColor: "#2c3e50"
+    padding: 20
+    children:
+      - kind: text
+        text: "© 1976 Estrela de Ouro Brinquedos. Todos os direitos reservados."
+        color: "#ecf0f1"
+        align: "center"
