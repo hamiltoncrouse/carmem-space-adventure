@@ -1,5 +1,5 @@
 services:
   - type: web
     name: carmem-space-adventure
-    runtime: static
-    publishPath: .
+    env: static
+    staticPublishPath: .
