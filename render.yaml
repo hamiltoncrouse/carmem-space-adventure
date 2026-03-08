@@ -1,5 +1,7 @@
 services:
   - type: web
     name: carmem-space-adventure
-    env: static
+    runtime: static
+    branch: master
+    buildCommand: echo "No build step"
     staticPublishPath: .
